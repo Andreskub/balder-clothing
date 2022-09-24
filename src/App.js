@@ -1,17 +1,12 @@
-import NavBar from './components/NavBar'
-import logo from './logo.svg';
+import NavBar from './components/NavBar/NavBar'
 import './App.css';
+import ItemListContainer from './components/ItemListContainer/ItemListContainer';
 
 function App() {
   return (
     <div className="App">
-      <header>
-        <NavBar/>
-      </header>
-      <body>
-        Balder Shoes
-        <img src={logo} className="App-logo" alt="logo" />
-      </body>
+      <NavBar/>
+      <ItemListContainer/>
     </div>
   );
 }
