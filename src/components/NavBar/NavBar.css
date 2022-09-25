@@ -1,23 +1,9 @@
-.NavBar {
-    text-align: center;
-    color: azure;
-
-    /*background-image: url(.../);*/
-    background-color: violet;
-
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
 @import url('https://fonts.googleapis.com/css2?family=Oswald&family=Pacifico&display=swap');
 
 header {
   height: auto;
 	width: 100vw;
-	position: fixed;
+	/*position: fixed;*/
 	top: 0;
 	background-color: white;
 	z-index: 1;

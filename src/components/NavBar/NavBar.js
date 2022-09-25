@@ -6,7 +6,7 @@ function NavBar() {
     return(
         <header>
             <nav className='NavBar'>
-                <h1>Balder Shoes</h1>
+                <h1>Balder Clothing</h1>
                 <ul>
                     <li>Shirts</li>
                     <li>Hoodies</li>
