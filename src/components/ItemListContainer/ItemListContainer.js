@@ -1,12 +1,32 @@
 import './ItemListContainer.css';
-import Item from '../Item/Item.js'
+import ItemList from '../ItemList/ItemList'
 
-const ItemListContainer = () => {
-    
+import { useParams } from "react-router-dom";
+import React, { useState, useEffect } from "react";
+
+import { getItems, getItemsByCategory } from "../database/data";
+
+const ItemListContainer = (props) => {
+    const [itemsList, setItemsList] = useState([]);
+    const params = useParams();
+    const categoryID = params.categoryID;
+
+    useEffect(() => {
+        if (categoryID === undefined) {
+            getItems().then((data) => {
+                setItemsList(data);
+        });
+        } else {
+            getItemsByCategory(categoryID).then((data) => {
+                setItemsList(data);
+        });
+        }
+    }, [categoryID]);
+
     return (
-        <div>
-            <Item title='Buzo' detail='Amarillo' size='L' price='5999'/>
-            <Item title='Buzo' detail='Negro' size='M' price='5900'/>
+        <div className='container'>
+            <h1>Titulo</h1>
+            <ItemList itemList={itemsList} />
         </div>
         
     )
