@@ -1,17 +1,17 @@
 const data = [
     {
         id: 1,
-        title: "Buzo Amarillo",
-        img: "../../assets/hoodies/hoodie-1.jpg",
+        title: "Furior",
+        img: "/assets/hoodies/hoodie-1.png",
         price: 500,
-        detail: "Rye Rye",
+        detail: "Special Edition",
         stock: 10,
         category: "hoodies"
     },
     {
         id: 2,
-        title: "Buzo Azul",
-        img: "././assets/hoodies/hoodie-2.jpg",
+        title: "Pink Fury",
+        img: "/assets/hoodies/hoodie-2.jpg",
         price: 7000,
         detail: "Aloha",
         stock: 5,
@@ -19,12 +19,39 @@ const data = [
     },
     {
       id: 3,
-      title: "Buzo Marron",
-      img: "././assets/hoodies/hoodie-3.jpg",
+      title: "Classic Balder",
+      img: "/assets/hoodies/hoodie-3.png",
       price: 5000,
-      detail: "Aloha",
+      detail: "Classic",
       stock: 7,
       category: "hoodies"
+    },
+    {
+      id: 101,
+      title: "Puffer",
+      img: "/assets/jackets/jacket-1.png",
+      price: 5000,
+      detail: "Classic",
+      stock: 7,
+      category: "jackets&coats"
+    },
+    {
+      id: 201,
+      title: "Engine",
+      img: "/assets/shirts/shirt-1.jpg",
+      price: 5000,
+      detail: "Classic",
+      stock: 7,
+      category: "shirts"
+    },
+    {
+      id: 202,
+      title: "Kola",
+      img: "/assets/shirts/shirt-2.jpg",
+      price: 5000,
+      detail: "Limited",
+      stock: 7,
+      category: "shirts"
     }
 ]
 

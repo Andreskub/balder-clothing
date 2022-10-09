@@ -1,6 +1,6 @@
 import React from "react";
 import FlexWrapper from "../FlexWrapper/FlexWrapper";
-/*import ItemCount from "../ItemCount/ItemCount";*/
+import ItemCount from "../ItemCount/ItemCount";
 import "./ItemDetail.css";
 
 function CardDetail({ item }) {
@@ -12,10 +12,12 @@ function CardDetail({ item }) {
           <img src={item.img} alt={item.title} />
           <h3>$ {item.price}</h3>
         </div>
-        {/*<ItemCount stock={item.stock} initial={1} text="Agregar al carrito" />*/}
+        {<ItemCount stock={item.stock} initial={1} text="Add to cart" />}
       </FlexWrapper>
     </div>
   );
 }
+
+
 
 export default CardDetail;

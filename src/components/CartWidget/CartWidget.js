@@ -1,9 +1,8 @@
 import "./CartWidget.css";
-import cartImg from '../../assets/add-to-basket.png'
 
 const CartWidget = () => {
     return (
-        <img src={cartImg} className="CartWidget" alt="cart" />
+        <img src={process.env.PUBLIC_URL + '/assets/add-to-cart.png'} className="CartWidget" alt="cart" />
     )
 }
 

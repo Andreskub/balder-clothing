@@ -24,10 +24,13 @@ const ItemListContainer = (props) => {
     }, [categoryID]);
 
     return (
-        <div className='container'>
-            <h1>Titulo</h1>
-            <ItemList itemList={itemsList} />
+        <div>
+            <div className='section'><p>/Home/{categoryID}</p></div>
+            <div className='container'>
+                <ItemList itemList={itemsList} />
+            </div>
         </div>
+        
         
     )
 }

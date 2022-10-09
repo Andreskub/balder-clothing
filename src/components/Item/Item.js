@@ -9,7 +9,8 @@ const Item = (props)=>{
             </div>
             <div className='product-detail'>
                 <ul>
-                    <li><h1>{props.title} {props.detail}</h1></li>
+                    <li><h1>{props.title}</h1></li>
+                    <li>{props.detail}</li>
                     <li>{props.size}</li>
                     <li>${props.price}</li>
                     <Link to={`/item/${props.id}`}>
