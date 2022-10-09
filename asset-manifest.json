@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/balder-clothing/static/css/main.23d07def.css",
+    "main.js": "/balder-clothing/static/js/main.cb574c23.js",
+    "static/js/787.a37395f3.chunk.js": "/balder-clothing/static/js/787.a37395f3.chunk.js",
+    "index.html": "/balder-clothing/index.html",
+    "main.23d07def.css.map": "/balder-clothing/static/css/main.23d07def.css.map",
+    "main.cb574c23.js.map": "/balder-clothing/static/js/main.cb574c23.js.map",
+    "787.a37395f3.chunk.js.map": "/balder-clothing/static/js/787.a37395f3.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.23d07def.css",
+    "static/js/main.cb574c23.js"
+  ]
+}
