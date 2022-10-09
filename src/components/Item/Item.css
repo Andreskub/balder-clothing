@@ -36,3 +36,16 @@
     padding: 12px 8px;
     /*color: #e4554f;*/
 }
+
+.button {
+  border-radius: 5px;
+  background-color: #e4554f;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 15px;
+  padding: 15px;
+  width: 130px;
+  cursor: pointer;
+  margin: 20px;
+}

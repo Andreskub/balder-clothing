@@ -14,14 +14,12 @@ const Item = (props)=>{
                     <li>{props.size}</li>
                     <li>${props.price}</li>
                     <Link to={`/item/${props.id}`}>
-                        <button>See more</button>
+                        <button className='button'>See more</button>
                     </Link>
                 </ul>
             </div>
         </div>
     )
 }
-
-/*props.id*/
 
 export default Item;

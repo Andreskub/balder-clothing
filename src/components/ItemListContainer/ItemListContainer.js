@@ -25,7 +25,7 @@ const ItemListContainer = (props) => {
 
     return (
         <div>
-            <div className='section'><p>/Home/{categoryID}</p></div>
+            <div className='section'><p>/home/{categoryID}</p></div>
             <div className='container'>
                 <ItemList itemList={itemsList} />
             </div>
