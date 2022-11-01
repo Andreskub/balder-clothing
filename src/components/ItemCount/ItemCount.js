@@ -15,19 +15,14 @@ export default function ItemCount({ stock, initial, text, onAddToCart }) {
   }
 
   return (
-    <div>
+    <div className="itemcount_container">
       <FlexWrapper>
       <div>
           <h2>Finish your order</h2>
           <div className="itemcount_control">
-            <Button color="#fc6622" onClick={handleSubstract}>
-              -
-            </Button>
-
+            <Button onClick={handleSubstract}>-</Button>
             <strong>{count}</strong>
-            <Button color="#00cc22" onClick={handleAdd}>
-              +
-            </Button>
+            <Button onClick={handleAdd}>+</Button>
           </div>
         </div>
 

@@ -1,9 +1,12 @@
-.detail-container{
+.item-container{
+    margin: 50px;
     padding: 25px 8px;
     background-color: #8c8c8e;
+    display: flex;
+    color: white;
 }
 
-.cardDetail_img{
+.item-image{
     min-width: 256px;
     height: 256px;
     object-fit: cover;
@@ -13,7 +16,7 @@
     object-fit: cover;
 }
 
-.cardDetail_img img{
+.item-image img{
     width: 100%;
     height: 100%;
     object-fit: contain;
@@ -34,8 +37,9 @@
 }
 
 
-.cardDetail_detail{
-    padding: 12px 8px;  
+.item-info{
+    padding: 12px 8px;
+    
 }
 
 small{

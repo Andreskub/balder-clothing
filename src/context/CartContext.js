@@ -12,13 +12,21 @@ function CartContextProvider(props) {
     setCart(newCart);
   }
 
-  /* function clearCart() */
+  function clearCart() {
+    setCart([]);
+  }
+
   function removeItem(idToRemove) {
     let newCart = cart.filter((itemInCart) => itemInCart.id !== idToRemove);
     setCart(newCart);
   }
 
-  /* function getTotalPrice */
+  function getTotalPrice() {
+    let total = 0;
+    cart.forEach((e) => total += (e.count * e.price));
+    return total;
+  }
+
   function getTotalItemCount() {
     let total = 0;
     cart.forEach((itemInCart) => {
@@ -31,9 +39,7 @@ function CartContextProvider(props) {
 
   return (
     <>
-      <cartContext.Provider
-        value={{ cart, addToCart, getTotalItemCount, removeItem }}
-      >
+      <cartContext.Provider value={{ cart, addToCart, getTotalItemCount, getTotalPrice, clearCart, removeItem }}>
         {props.children}
       </cartContext.Provider>
     </>

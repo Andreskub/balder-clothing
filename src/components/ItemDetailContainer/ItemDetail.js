@@ -4,6 +4,7 @@ import ItemCount from "../ItemCount/ItemCount";
 import "./ItemDetail.css";
 import { useContext } from "react";
 import { cartContext } from "../../context/CartContext";
+import { Link } from 'react-router-dom';
 import Button from "../Button/Button";
 
 
@@ -13,21 +14,22 @@ function CardDetail({ item }) {
 
   function handleAddToCart(count) {
     console.log("Agregaste items al carrito:", item, count);
-      setCount(count);
+    addToCart(item, count);
+    setCount(count);
   }
 
   return (
-    <div className="detail-container">
-      <div className="cardDetail_img_detail">
+    <div className="item-container">
+      <div className="item-image">
         <img src={process.env.PUBLIC_URL + item.img} alt={item.title} />
       </div>
       <FlexWrapper>
-        <div className="cardDetail_detail">
+        <div className="item-info">
           <h2>{item.title}</h2>
-          <h4 className="cardDetail_muteD">{item.category}</h4>
-          <h3>$ {item.price}</h3>
+          <h3>{item.detail}</h3>
+          <h4>{item.category}</h4>
           <hr />
-          <p>{item.detail}</p>
+          <h3>$ {item.price}</h3>
         </div>
         {count === 0 ? (
           <ItemCount
@@ -37,9 +39,8 @@ function CardDetail({ item }) {
             text="Add to cart"
           />
         ) : (
-          <a href="/cart">Ver el carrito</a>
+          <Button><Link to="/cart">Go to cart</Link></Button>
         )}
-        {/* 3. Pasar la función como evento al Item COunt */}
         <Button onClick={()=> removeItem(item.id)}>Remove</Button>
       </FlexWrapper>
     </div>
