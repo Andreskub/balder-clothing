@@ -1,7 +1,7 @@
 .item-container{
     margin: 50px;
     padding: 25px 8px;
-    background-color: #8c8c8e;
+    background-color: #2d2d2d;
     display: flex;
     color: white;
 }
@@ -43,9 +43,14 @@
 }
 
 small{
-    color: #8c8c8e;
+    color: #2d2d2d;
 }
 
 .cardDetail_muted{
-    color: #8c8c8e
+    color: #2d2d2d
+}
+
+.btn-link{
+    text-decoration: none;
+    color: white;
 }

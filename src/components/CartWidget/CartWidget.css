@@ -1,5 +1,9 @@
-.CartWidget {
+.cart-widget-container{
+    display: inline-block;
+}
+
+.cart-widget {
     color: white;
-    width: 1em;
-    height: 1em;
+    width: 2em;
+    height: 2em;
 }

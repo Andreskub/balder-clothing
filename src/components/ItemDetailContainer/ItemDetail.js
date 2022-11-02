@@ -39,7 +39,7 @@ function CardDetail({ item }) {
             text="Add to cart"
           />
         ) : (
-          <Button><Link to="/cart">Go to cart</Link></Button>
+          <Button><Link className="btn-link" to="/cart">Go to cart</Link></Button>
         )}
         <Button onClick={()=> removeItem(item.id)}>Remove</Button>
       </FlexWrapper>

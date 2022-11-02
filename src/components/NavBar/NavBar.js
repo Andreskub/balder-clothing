@@ -2,13 +2,8 @@ import './NavBar.css'
 import '../CartWidget/CartWidget.js'
 import CartWidget from '../CartWidget/CartWidget.js';
 import { Link } from 'react-router-dom';
-import { useContext } from 'react';
-import { cartContext } from "../../context/CartContext";
 
 function NavBar() {
-
-    const {cart} = useContext(cartContext);
-
     return(
         <header>
             <nav className='nav-bar'>
