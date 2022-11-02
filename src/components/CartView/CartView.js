@@ -10,7 +10,7 @@ function CartView() {
   return (
     <div className="cartContainer">
         <div className="cart boxBorder">
-            <h3 className="boxBorder" >Cart</h3>
+            <h3 className="cart-name boxBorder">Cart</h3>
             <div className="cart-header">
                 <div className="column1">Item</div>
                 <div className="column1">Unit price</div>

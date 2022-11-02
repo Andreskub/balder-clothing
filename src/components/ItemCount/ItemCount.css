@@ -1,4 +1,4 @@
-.itemcount_container{
+.itemcount-container{
     padding: 12px 25px;
     display: flex;
     flex-direction: column;
@@ -10,11 +10,11 @@
     color: white;
 }
   
-.itemcount_control{
-    display: flex;
+.itemcount-control{
     justify-content: space-evenly;
     padding: 2px 10px;
 }
-.itemcount_btns{
+
+.itemcount-btns{
     margin-top: 15px;
 }

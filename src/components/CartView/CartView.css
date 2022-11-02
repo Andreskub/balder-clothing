@@ -4,12 +4,16 @@
 
 .boxBorder {
     box-shadow: 5px 5px 10px black;
-  }
+}
 
 .cart {
     min-width: 700px;
     text-align: center;
     color: white;
+}
+
+.cart-name{
+    background-color: #2d2d2d;
 }
 
 /* cart header */

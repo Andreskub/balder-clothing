@@ -23,13 +23,14 @@ function CardDetail({ item }) {
       <div className="item-image">
         <img src={process.env.PUBLIC_URL + item.img} alt={item.title} />
       </div>
-      <FlexWrapper>
+      <div>
         <div className="item-info">
-          <h2>{item.title}</h2>
-          <h3>{item.detail}</h3>
-          <h4>{item.category}</h4>
-          <hr />
-          <h3>$ {item.price}</h3>
+          <div>
+            <h2>{item.title}</h2>
+            <h3>{item.detail}</h3>
+          </div>
+          <hr/>
+          <div className="item-price"><h3>${item.price}</h3></div>
         </div>
         {count === 0 ? (
           <ItemCount
@@ -42,7 +43,7 @@ function CardDetail({ item }) {
           <Button><Link className="btn-link" to="/cart">Go to cart</Link></Button>
         )}
         <Button onClick={()=> removeItem(item.id)}>Remove</Button>
-      </FlexWrapper>
+      </div>
     </div>
   );
 }
