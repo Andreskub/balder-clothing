@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/balder-clothing/static/css/main.23d07def.css",
-    "main.js": "/balder-clothing/static/js/main.cb574c23.js",
+    "main.css": "/balder-clothing/static/css/main.f9050e91.css",
+    "main.js": "/balder-clothing/static/js/main.b563557c.js",
     "static/js/787.a37395f3.chunk.js": "/balder-clothing/static/js/787.a37395f3.chunk.js",
     "index.html": "/balder-clothing/index.html",
-    "main.23d07def.css.map": "/balder-clothing/static/css/main.23d07def.css.map",
-    "main.cb574c23.js.map": "/balder-clothing/static/js/main.cb574c23.js.map",
+    "main.f9050e91.css.map": "/balder-clothing/static/css/main.f9050e91.css.map",
+    "main.b563557c.js.map": "/balder-clothing/static/js/main.b563557c.js.map",
     "787.a37395f3.chunk.js.map": "/balder-clothing/static/js/787.a37395f3.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.23d07def.css",
-    "static/js/main.cb574c23.js"
+    "static/css/main.f9050e91.css",
+    "static/js/main.b563557c.js"
   ]
 }
