@@ -1,8 +1,8 @@
-.cartContainer{
+.cart-container{
     display: inline-block;
 }
 
-.boxBorder {
+.box-border {
     box-shadow: 5px 5px 10px black;
 }
 

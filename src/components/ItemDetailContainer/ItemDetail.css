@@ -22,7 +22,7 @@
     object-fit: contain;
 }
 
-.cardDetail{
+.card-detail{
     margin: 10px 15px;
     min-height: 600px;
     width: 90%;
@@ -35,7 +35,6 @@
     transition: all 0.20s ease-in;
     cursor: pointer;
 }
-
 
 .item-info{
     border-color: white;
@@ -56,14 +55,6 @@
     top: 0; bottom: 0; left: 0; right: 0;
     margin: auto;
     height: 35px; /*requires explicit height*/
-}
-
-small{
-    color: #2d2d2d;
-}
-
-.cardDetail_muted{
-    color: #2d2d2d
 }
 
 .btn-link{
